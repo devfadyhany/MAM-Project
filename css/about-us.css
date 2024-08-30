@@ -1,0 +1,129 @@
+/* About-Us Section */
+.about-us-section {
+  width: 100%;
+  background-color: var(--main-color);
+}
+
+.flex-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.flex-content .text-content {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  color: var(--main-text-color);
+}
+
+.flex-content .text-content .title h1 {
+  font-size: 42px;
+  margin-bottom: 24px;
+}
+
+.opasity {
+  opacity: 0.7;
+  line-height: 1.5;
+}
+
+.flex-content .text-content .grid-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  margin: 20px 0px;
+}
+
+.flex-content .text-content .grid-items .item {
+  display: flex;
+  flex-flow: column;
+  gap: 10px;
+  color: var(--main-text-color);
+}
+
+.text-content .grid-items .item .totalicon {
+  position: relative;
+  font-size: 32px;
+}
+
+.grid-items .item .totalicon .circul {
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+  background-color: var(--primary-color);
+  opacity: 0.5;
+  position: absolute;
+  left: 16px;
+  bottom: 0;
+}
+
+.flex-content .image-container {
+  position: relative;
+  width: 45%;
+}
+
+.flex-content .image-container .lower-photo {
+  width: 40%;
+  position: absolute;
+  top: -8%;
+  left: -12%;
+  z-index: 1;
+}
+
+.flex-content .image-container .upper-photo {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 3;
+  object-fit: cover;
+  border-radius: 25px;
+}
+
+@media (max-width: 1024px) {
+  .flex-content .text-content .grid-items {
+    gap: 25px;
+  }
+
+  .flex-content .image-container .lower-photo {
+    width: 60%;
+  }
+}
+
+@media (max-width: 980px) {
+  .flex-content {
+    flex-direction: column;
+  }
+
+  .flex-content .text-content {
+    width: 100%;
+  }
+
+  .flex-content .image-container {
+    display: none;
+  }
+}
+
+@media (max-width: 550px) {
+  .flex-content .text-content .grid-items {
+    grid-template-columns: 1fr;
+  }
+
+  .flex-content .text-content .grid-items .item {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .flex-content .text-content .title h1 {
+    text-align: center;
+  }
+
+  .opasity {
+    text-align: center;
+  }
+}

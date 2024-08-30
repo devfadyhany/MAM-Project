@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Furni.</title>
+    <link rel="icon" href="./imgs/logooo.png" />
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <!-- Roboto Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Project CSS -->
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/hero.css" />
+    <link rel="stylesheet" href="./css/products.css" />
+    <link rel="stylesheet" href="./css/about-us.css" />
+    <link rel="stylesheet" href="./css/features.css" />
+    <link rel="stylesheet" href="./css/testamonial.css" />
+    <link rel="stylesheet" href="./css/blog.css" />
+    <link rel="stylesheet" href="./css/contact.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+  </head>
+
+  <body class="">
+    <!-- Hero Section -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="head-1">
+      <div class="container-fluid">
+        <div class="logo">
+          <i class="fa-solid fa-house" id="fa2"></i>
+          Furni<span>.</span>
+        </div>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#service">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <i
+                onclick="ToggleDarkMode()"
+                style="
+                  cursor: pointer;
+                  color: var(--main-text-color);
+                  font-size: 24px;
+                "
+                class="fa-solid fa-moon"
+              ></i>
+            </li>
+            <li class="nav-item">
+              <div class="icons1">
+                <img class="one" src="imgs/Vector-1.png" alt="" />
+                <img class="two" src="imgs/Vector-2.png" alt="" />
+                <img class="three" src="imgs/Vector.png" alt="" />
+                <div class="dot">..</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="header-section">
+      <div class="text-header">
+        <h1>Modern Interior Design Studio</h1>
+        <div class="buttons">
+          <button class="first-button">Shop Now</button>
+          <button class="second-button">Explore</button>
+        </div>
+      </div>
+      <div class="photos">
+        <img class="background" src="imgs/Dotted.png" alt="Notfound!" />
+        <img class="sofa" src="imgs/couch 1.png" alt="Notfound!" />
+      </div>
+    </section>
+    <div class="container">
+      <!-- Products Section -->
+      <section class="products-section">
+        <div class="content">
+          <h1>Crafted with excellent material.</h1>
+          <p>
+            Donec mattis porta eros, aliquet finibus risus interdum at. Nulla
+            vulputate as it was for us to know what was to be done.
+          </p>
+          <button class="button">Explore</button>
+        </div>
+        <div class="product" onclick="showProductName('Nordic Chair')">
+          <img src="./imgs/product-1-1.png" alt="Nordic Chair" />
+          <div class="product-footer">
+            <h3>Nordic Chair</h3>
+            <p>$50.00</p>
+          </div>
+          <div class="add-to-cart">+</div>
+        </div>
+        <div class="product" onclick="showProductName('Kruzo Aero Chair')">
+          <img src="./imgs/product-2.png" alt="Kruzo Aero Chair" />
+          <div class="product-footer">
+            <h3>Kruzo Aero Chair</h3>
+            <p>$78.00</p>
+            <div class="add-to-cart">+</div>
+          </div>
+        </div>
+        <div class="product" onclick="showProductName('Ergonomic Chair')">
+          <img src="./imgs/product-3.png" alt="Ergonomic Chair" />
+          <div class="product-footer">
+            <h3>Ergonomic Chair</h3>
+            <p>$43.00</p>
+            <div class="add-to-cart">+</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section class="about-us-section" id="about">
+        <div class="flex-content">
+          <div class="text-content">
+            <div class="title">
+              <h1>Why choose us</h1>
+              <div class="opasity">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Suscipit alias at quis fugiat, excepturi optio, quae dolorum,
+                totam dicta ab quos repellat.
+              </div>
+            </div>
+            <div class="grid-items">
+              <div class="item" id="item1">
+                <div class="totalicon">
+                  <i class="fa-solid fa-truck"></i>
+                  <div class="circul"></div>
+                </div>
+                <b>Fast&Free shipping</b>
+
+                <div class="opasity">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit sit
+                  amet consectetur Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit sit amet consectetur .
+                </div>
+              </div>
+              <div class="item" id="item2">
+                <div class="totalicon">
+                  <i class="fa-regular fa-credit-card"></i>
+                  <div class="circul"></div>
+                </div>
+                <b>Easy to Shop</b>
+
+                <div class="opasity">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit sit
+                  amet consectetur Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit sit amet consectetur .
+                </div>
+              </div>
+              <div class="item" id="item3">
+                <div class="totalicon">
+                  <i class="fa-regular fa-folder-closed"></i>
+                  <div class="circul"></div>
+                </div>
+                <b>24/7 Suppor</b>
+
+                <div class="opasity">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit sit
+                  amet consectetur Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit sit amet consectetur .
+                </div>
+              </div>
+              <div class="item" id="item4">
+                <div class="totalicon">
+                  <i class="fa-regular fa-calendar-check"></i>
+                  <div class="circul"></div>
+                </div>
+                <b>Hassle Free Returns</b>
+
+                <div class="opasity">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit sit
+                  amet consectetur Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit sit amet consectetur .
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="image-container">
+            <img
+              class="upper-photo"
+              src="./imgs/the image.png"
+              alt="Upper Photo"
+            />
+            <img
+              class="lower-photo"
+              src="./imgs/Dot.png"
+              alt="Background Photo"
+            />
+          </div>
+        </div>
+        <script src="js/about-us.js"></script>
+      </section>
+
+      <!-- Features Section -->
+      <section id="Momen">
+        <div id="photos">
+          <img src="./imgs/Dotted.png" alt="" id="dots" />
+          <img src="./imgs/img-grid-1 1.png" alt="" id="big-img" />
+          <img src="./imgs/img-grid-2 1.png" alt="" id="small-img" />
+          <img src="./imgs/img-grid-3 1.png" alt="" id="mid-img" />
+        </div>
+        <div id="discription">
+          <h2>
+            We help you make <br />
+            Modern interior Design
+          </h2>
+          <p>
+            Discover the perfect blend of style and comfort with our modern
+            interior design solutions. From sleek furniture to unique decor, we
+            offer everything you need to create a space that reflects your taste
+            and lifestyle. Transform your home with pieces that are not only
+            beautiful but also functional and built to last. Let us help you
+            design a space that feels uniquely yours.
+          </p>
+          <ul id="example-list"></ul>
+          <a href="">Explore</a>
+        </div>
+      </section>
+
+      <!-- Testamonial Section -->
+      <section class="testamonial-section" id="service">
+        <div class="cards-container">
+          <div class="item">
+            <div class="image">
+              <img
+                src="./imgs/product-1-1.png"
+                alt="chair1"
+                style="height: 120px; width: 100px"
+              />
+            </div>
+            <div class="wall">
+              <img src="./imgs/Rectangle 10.png" alt="wall" />
+            </div>
+
+            <div class="text">
+              <h2>Nordic Chair</h2>
+              <p>Donec mattis eros, aliquit finbus risus in. Doneced</p>
+              <a href="">Read more</a>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="image">
+              <img
+                src="./imgs/product-2-1.png"
+                alt="chair2"
+                style="height: 120px; width: 110px"
+              />
+            </div>
+            <div class="wall">
+              <img src="./imgs/Rectangle 10.png" alt="wall" />
+            </div>
+
+            <div class="text">
+              <h2>Kruzi Aero</h2>
+              <p>Donec mattis eros, aliquit finbus risus in. Doneced</p>
+              <a href="">Read more</a>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="image">
+              <img
+                src="./imgs/product-3.png"
+                alt="chair3"
+                style="height: 120px; width: 80px"
+              />
+            </div>
+            <div class="wall">
+              <img src="./imgs/Rectangle 10.png" alt="wall" />
+            </div>
+
+            <div class="text">
+              <h2>Ergonomic Chair</h2>
+              <p>Donec mattis eros, aliquit finbus risus in. Doneced</p>
+              <a href="">Read more</a>
+            </div>
+          </div>
+        </div>
+        <h2 id="testamonial-header" class="text-center w-100">Testimonials</h2>
+        <div id="carouselExampleCaptions" class="carousel slide">
+          <div class="carousel-indicators">
+            <button
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="0"
+              class="active rounded-circle"
+              style="width: 10px; height: 10px"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="1"
+              class="rounded-circle"
+              style="width: 10px; height: 10px"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="2"
+              class="rounded-circle"
+              style="width: 10px; height: 10px"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <p class="text-center">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas
+                atque, quasi, accusantium consectetur omnis possimus doloribus
+                vero expedita in accusamus eos dicta ad, deleniti quisquam
+                laboriosam eligendi. Dolorum, vitae quas.
+              </p>
+              <div class="d-flex flex-column align-items-center gap-1">
+                <img
+                  class="rounded-circle"
+                  src="./imgs/person-1 1.png"
+                  alt=""
+                />
+                <h5>Michelle Anna</h5>
+                <p>CEO, Co-Founder, XYZ inc.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <p class="text-center">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Maiores, cumque deserunt tempore aperiam itaque a. Ab
+                necessitatibus tempore soluta nemo ipsum, quibusdam quia quidem
+                distinctio laboriosam ut labore adipisci a.
+              </p>
+              <div class="d-flex flex-column align-items-center gap-1">
+                <img
+                  class="rounded-circle"
+                  src="./imgs/person-1 1.png"
+                  alt=""
+                />
+                <h5>Michelle Anna</h5>
+                <p>CEO, Co-Founder, XYZ inc.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <p class="text-center">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+                temporibus consectetur voluptas vero asperiores cupiditate
+                aspernatur nesciunt, animi ullam autem suscipit voluptatum
+                magnam omnis! Facilis nulla dolore et atque ipsa.
+              </p>
+              <div class="d-flex flex-column align-items-center gap-1">
+                <img
+                  class="rounded-circle"
+                  src="./imgs/person-1 1.png"
+                  alt=""
+                />
+                <h5>Michelle Anna</h5>
+                <p>CEO, Co-Founder, XYZ inc.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Previous Button -->
+          <button
+            id="carousel-back"
+            class="btn rounded-circle"
+            style="background-color: var(--primary-color); color: white"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev"
+          >
+            <i class="fa-solid fa-angle-left"></i>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <!-- Next Button -->
+          <button
+            id="carousel-next"
+            class="btn btn-success rounded-circle"
+            style="background-color: var(--primary-color); color: white"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next"
+          >
+            <i class="fa-solid fa-angle-right"></i>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- Blogs Section -->
+      <section class="blog-section">
+        <div class="content">
+          <h1>Recent Blog</h1>
+          <a href="pics.html" target="_blank">View All Posts</a>
+        </div>
+
+        <div class="images-container">
+          <div class="item" style="cursor: pointer">
+            <img src="imgs/post-1 1.png" alt="post-1" />
+
+            <div class="content">
+              <p><strong>First Time Home Owner Ideas</strong></p>
+              <p>
+                by <strong>nana ama</strong> on <strong>nov 18th,2022</strong>
+              </p>
+            </div>
+          </div>
+
+          <div class="item" style="cursor: pointer">
+            <img src="imgs/post-2 1.png" alt="post-2" />
+
+            <div class="content">
+              <p><strong>First Time Home Owner Ideas</strong></p>
+              <p>
+                by <strong>nana ama</strong> on <strong>nov 18th,2022</strong>
+              </p>
+            </div>
+          </div>
+
+          <div class="item" style="cursor: pointer">
+            <img src="imgs/post-3 1.png" alt="post-3" />
+
+            <div class="content">
+              <p><strong>First Time Home Owner Ideas</strong></p>
+              <p>
+                by <strong>nana ama</strong> on <strong>nov 18th,2022</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+      <div class="container" id="contact-section-container">
+        <form id="contact-form" action="">
+          <h3>
+            <span><i class="fa-regular fa-envelope"></i></span>Subscribe to
+            Newsletter
+          </h3>
+          <div class="d-flex">
+            <div class="input-field">
+              <input id="name" type="text" placeholder="Enter your name" />
+              <span id="name-error">You must enter your name.</span>
+            </div>
+            <div class="input-field">
+              <input id="email" type="email" placeholder="Enter your e-mail" />
+              <span id="email-error">You must enter your email.</span>
+            </div>
+            <button type="submit">
+              <i class="fa-solid fa-paper-plane"></i>
+            </button>
+          </div>
+        </form>
+        <img src="./imgs/sofa 1.png" alt="Sofa Image" />
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <h2>Furni.</h2>
+        <div class="menus">
+          <div class="column">
+            <p>
+              Donec mattis porta eros, aliquet finibus risus interdumat. Nulla
+              vivethe as it was for us to know what was to be done. the this is
+              a long post for the text.`This small text has to be place here,
+              since this is
+            </p>
+
+            <div class="social">
+              <div class="item">
+                <i class="fa-brands fa-facebook-f"></i>
+              </div>
+              <div class="item">
+                <i class="fa-brands fa-instagram"></i>
+              </div>
+              <div class="item">
+                <i class="fa-brands fa-twitter"></i>
+              </div>
+              <div class="item">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </div>
+            </div>
+          </div>
+          <ul>
+            <li>About us</li>
+            <li>Services</li>
+            <li>Blog</li>
+            <li>Contact us</li>
+          </ul>
+          <ul>
+            <li>Support</li>
+            <li>Knowledge base</li>
+            <li>Live chat</li>
+          </ul>
+          <ul>
+            <li>Jobs</li>
+            <li>Our team</li>
+            <li>Leadership</li>
+            <li>Privacy Policy</li>
+          </ul>
+          <ul>
+            <li>Nordic Chair</li>
+            <li>Kruzo Aero</li>
+            <li>Ergonomic</li>
+          </ul>
+        </div>
+        <hr />
+        <div class="copyright">
+          <p>Copyright 2024 &copy; MAM. All Rights Reserved</p>
+          <ul class="p-0">
+            <li id="first">Terms & Conditions</li>
+            <li>Privacy Policy</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Fontawesome -->
+    <script src="./js/all.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="./js/bootstrap.min.js"></script>
+    <!-- Project Javascript -->
+    <script src="./js/dark-mode.js"></script>
+    <script src="./js/contact.js"></script>
+    <script src="./js/features.js"></script>
+    <script src="./js/products-section.js"></script>
+    <script src="./js/about-us.js"></script>
+  </body>
+</html>

@@ -1,0 +1,169 @@
+/* Footer */
+footer {
+  background-color: var(--footer-bg);
+  padding-bottom: 50px;
+  color: var(--main-text-color);
+}
+
+footer h2 {
+  font-weight: 500;
+}
+
+footer .menus {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .menus .column {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+
+footer .menus .column p {
+  color: gray;
+}
+
+footer .menus .column .social {
+  margin: 50px 0;
+  display: flex;
+}
+
+footer .menus .column .social .item {
+  cursor: pointer;
+  background-color: lightgray;
+  color: black;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color ease-in-out 0.2s;
+}
+
+footer .menus .column .social .item:hover {
+  background-color: gray;
+}
+
+footer .menus ul {
+  list-style: none;
+}
+
+footer .menus ul li {
+  font-weight: 400;
+  cursor: pointer;
+  color: gray;
+  margin-bottom: 10px;
+  transition: color ease-in-out 0.2s;
+}
+
+footer .menus ul li:hover {
+  color: rgb(25, 25, 25);
+}
+
+footer hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 5px solid lightgray;
+  margin-bottom: 32px;
+}
+
+footer .copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+footer .copyright p {
+  color: gray;
+}
+
+footer .copyright ul {
+  list-style: none;
+  display: flex;
+}
+
+footer .copyright ul li {
+  cursor: pointer;
+  color: gray;
+  transition: color ease-in-out 0.2s;
+}
+
+footer .copyright ul #first {
+  margin-right: 32px;
+}
+
+footer .copyright li:hover {
+  color: rgb(25, 25, 25);
+}
+
+@media (max-width: 1280px) {
+  footer .menus .column {
+    width: 100%;
+  }
+}
+
+@media (max-width: 750px) {
+  footer h2 {
+    text-align: center;
+  }
+
+  footer .menus {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  footer .menus .col {
+    width: 100%;
+    align-items: center;
+  }
+
+  footer .menus ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+
+  footer .menus ul li {
+    margin-right: 32px;
+  }
+
+  footer .menus .column .social {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  footer li,
+  footer p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 500px) {
+  footer .menus ul {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 32px;
+  }
+
+  footer .menus ul li {
+    margin-right: 0;
+  }
+
+  footer .copyright {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  footer .copyright p {
+    margin-bottom: 25px;
+  }
+}

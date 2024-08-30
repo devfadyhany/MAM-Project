@@ -1,0 +1,34 @@
+:root {
+  --primary-color: #3b5d50;
+  --primary-variant: #263d34;
+  --main-color: #eff2f1;
+  --main-text-color: black;
+  --footer-bg: #fff;
+}
+
+.dark {
+  --primary-color: #183217;
+  --primary-variant: #2a5627;
+  --main-color: #18191a;
+  --main-text-color: white;
+  --footer-bg: #242526;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: var(--main-color);
+}
+
+.carousel-indicators .active {
+  background-color: var(--primary-color) !important;
+}
+
+.carousel-indicators button {
+  background-color: #d9d9d9 !important;
+}

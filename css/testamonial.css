@@ -1,0 +1,99 @@
+/* Testimonials Section */
+.testamonial-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  background-color: var(--main-color);
+}
+
+.testamonial-section .cards-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.testamonial-section .item {
+  cursor: pointer;
+  flex: 1;
+  display: flex;
+  position: relative;
+  border-radius: 10px;
+  color: var(--main-text-color);
+}
+
+.testamonial-section .item:hover {
+  background-color: rgba(169, 169, 169, 0.5);
+}
+
+.testamonial-section .item .image {
+  position: absolute;
+  top: -10px;
+  left: 0;
+}
+
+.testamonial-section .item .wall {
+  border-radius: 5px;
+  height: 110px;
+  width: 100px;
+}
+
+.testamonial-section .item .text p {
+  margin: -15px 0px;
+  padding-bottom: 20px;
+}
+
+.testamonial-section .item .text a {
+  text-decoration: none;
+  color: rgb(199, 195, 195);
+}
+
+.testamonial-section .item .text {
+  width: 50%;
+  font-size: small;
+  margin-left: 42px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.testamonial-section .item .text h2 {
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+@media (max-width: 768px) {
+  .testamonial-section {
+    flex-direction: column;
+    align-items: start;
+  }
+}
+
+/* Carousel */
+#testamonial-header {
+  color: var(--main-text-color);
+}
+
+#carousel-back {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+#carousel-next {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.carousel-inner {
+  padding-inline: 100px;
+  padding-bottom: 50px;
+  color: var(--main-text-color);
+}

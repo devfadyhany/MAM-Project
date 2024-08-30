@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+   <script>
+    
+   document.addEventListener('DOMContentLoaded', function() {
+    // Create the div element
+    const nameDiv = document.createElement('h1');
+    nameDiv.style.color='white';
+    nameDiv.textContent='Image-Gallary';
+    nameDiv.className='name';
+    nameDiv.style.fontSize='large';
+    nameDiv.style.textAlign='center';
+
+    const galleryDiv = document.createElement('div');
+   
+    galleryDiv.className = 'image-gallery';
+    galleryDiv.style.display = 'flex';
+    galleryDiv.style.flexWrap = 'wrap';
+    galleryDiv.style.justifyContent='center'
+   
+   
+
+    // Array of image sources
+    const images = [
+        'imgs/decor1.jpg',
+        'imgs/decor2.jpg',
+        'imgs/decor3.jpg',
+        'imgs/decor4.jpg',
+        'imgs/decor1.jpg',
+        'imgs/decor2.jpg',
+        'imgs/decor3.jpg',
+        'imgs/decor4.jpg',
+        'imgs/decor1.jpg',
+        'imgs/decor2.jpg',
+        'imgs/decor3.jpg',
+        'imgs/decor4.jpg',
+        'imgs/decor5.jpg'
+    ];
+
+    // Loop through the images array and create img elements
+    images.forEach(src => {
+        const img = document.createElement('img');
+        img.src = src;
+        img.alt = `Image ${src.split('.')[0].replace('image', '')}`;
+        img.style.height='200px';
+        img.style.width='300px';
+        img.style.borderRadius='20px'
+        img.style.marginTop='20px';
+        img.style.marginLeft='20px';
+        galleryDiv.appendChild(img);
+    });
+
+    // Append the gallery div to the body or any other container
+    document.body.style.backgroundColor='#3d5d50';
+    document.body.appendChild(nameDiv);
+    document.body.appendChild(galleryDiv);
+});
+</script>
+</body>
+</html>
